@@ -28,7 +28,7 @@ const User = zod_1.default.object({
     username: zod_1.default.string().email(),
     password: zod_1.default.string().min(6)
 });
-mongoose_1.default.connect("mongodb+srv://nishantguvvada:lMjNtGBsDaHyzsHk@cluster0.gon8jn3.mongodb.net/cloud-wallet");
+mongoose_1.default.connect();
 const userSchema = new mongoose_1.default.Schema({
     username: String,
     password: String,
